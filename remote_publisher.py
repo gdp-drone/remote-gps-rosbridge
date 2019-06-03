@@ -25,7 +25,7 @@ mag_transmit = {}
 def start_listening():
     gps_listener.subscribe(gps_recv)
     imu_listener.subscribe(imu_recv)
-    mag_listener.subscriber(mag_recv)
+    mag_listener.subscribe(mag_recv)
 
 def gps_recv(message):
     gps_transmit['altitude'] = message['altitude']
