@@ -37,11 +37,11 @@ def imu_recv(message):
     imu_transmit['orientation'] = message['orientation'] # TODO: unsure if subscript works
     imu_transmit['angular_velocity'] = message['angular_velocity']
     imu_transmit['linear_acceleration'] = message['linear_acceleration']
-    print(imu_transmit)
+    # print(imu_transmit)
 
 def mag_recv(message):
     mag_transmit['magnetic_field'] = message['magnetic_field'] # TODO: unsure if subscript works
-    print(mag_transmit)
+    # print(mag_transmit)
 
 def start_talking():
     while client.is_connected:
